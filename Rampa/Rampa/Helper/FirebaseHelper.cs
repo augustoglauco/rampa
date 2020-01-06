@@ -8,8 +8,7 @@ using Rampa.Model;
 
 namespace Rampa.Helper
 {
-    class FirebaseHelper
-    {
+    class FirebaseHelper    {
         private readonly string ChildName = "Persons";
         readonly FirebaseClient firebase = new FirebaseClient("https://newagent-fwokmd.firebaseio.com/");
 
@@ -69,8 +68,6 @@ namespace Rampa.Helper
                 .OnceAsync<Person>()).FirstOrDefault(a => a.Object.PersonId == personId);
             await firebase.Child(ChildName).Child(toDeletePerson.Key).DeleteAsync();
         }
-
-
 
     }
 }

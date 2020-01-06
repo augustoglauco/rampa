@@ -31,15 +31,6 @@ namespace Rampa
 
         private async void GetPosition(object sender, EventArgs e)
         {
-            //var locator = CrossGeolocator.Current;
-            //locator.DesiredAccuracy = 10;
-
-            //var position = await locator.GetPositionAsync(TimeSpan.FromSeconds(10));
-
-            //LongitudeLabel.Text = string.Format("{0:0.0000000}", position.Longitude);
-            //LatitudeLabel.Text = string.Format("{0:0.0000000}", position.Latitude);
-            //AltitudeLabel.Text = string.Format("{0:0.0000000}", position.Altitude);
-
             try
             {
                 Location location = null;
@@ -76,9 +67,6 @@ namespace Rampa
                 // Unable to get location
             }
         }
-
-
-
 
         private async Task FetchAllPersons()
         {
