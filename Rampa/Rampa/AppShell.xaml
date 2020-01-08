@@ -92,7 +92,7 @@
                
         -->
         <ShellContent Route="cats"
-                      Style="{StaticResource CadastroShell}"
+                      Style="{StaticResource PosicaoShell}"
                       Title="Posição"
                       Icon="monkey.png"
                       ContentTemplate="{DataTemplate views:X}" />
@@ -102,7 +102,7 @@
                       Style="{StaticResource CadastroShell}"
                       Title="Cadastro"
                       Icon="monkey.png"
-                      ContentTemplate="{DataTemplate views:X}" />
+                      ContentTemplate="{DataTemplate views:CadastroPage}" />
         <ShellContent Route="elephants"
                       Style="{StaticResource PilotosShell}"
                       Title="Pilotos"

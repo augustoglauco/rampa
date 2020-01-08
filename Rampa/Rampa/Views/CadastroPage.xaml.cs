@@ -14,13 +14,18 @@ namespace Rampa.Views
     {
         readonly FirebaseHelper firebaseHelper = new FirebaseHelper();
 
+        public CadastroPage()
+        {
+            InitializeComponent();
+        }
+
         protected override async void OnAppearing()
         {
             base.OnAppearing();
 
             await FetchAllPersons();
         }
-        
+
         private async Task FetchAllPersons()
         {
             var allPersons = await firebaseHelper.GetAllPersons();
