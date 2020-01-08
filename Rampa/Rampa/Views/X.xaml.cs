@@ -12,8 +12,8 @@ namespace Rampa.Views
     [DesignTimeVisible(false)]
     public partial class X : ContentPage
     {
-        readonly FirebaseHelper firebaseHelper = new FirebaseHelper();
-        public ICommand NavigateCommand { get; private set; }
+        //readonly FirebaseHelper firebaseHelper = new FirebaseHelper();
+        //public ICommand NavigateCommand { get; private set; }
 
         public X()
         {
