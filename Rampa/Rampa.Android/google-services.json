@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "62221749893",
+    "firebase_url": "https://newagent-fwokmd.firebaseio.com",
+    "project_id": "newagent-fwokmd",
+    "storage_bucket": "newagent-fwokmd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:62221749893:android:8fc789de5b930bddf323ec",
+        "android_client_info": {
+          "package_name": "com.augustoglauco.rampa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "62221749893-2u7hv6depvc085vqpees9i89gh0pkec8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqrVd5nKLiZ6butxBNL30S1TYhOcQvZH4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "62221749893-2u7hv6depvc085vqpees9i89gh0pkec8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
