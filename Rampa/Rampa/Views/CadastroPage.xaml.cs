@@ -1,25 +1,18 @@
 ﻿using System;
-using System.ComponentModel;
-using Xamarin.Essentials;
 using Xamarin.Forms;
 using System.Threading.Tasks;
 using Rampa.Helper;
 using Rampa.Model;
 
 
-namespace Rampa
+namespace Rampa.Views
 {
     // Learn more about making custom code visible in the Xamarin.Forms previewer
     // by visiting https://aka.ms/xamarinforms-previewer
-    [DesignTimeVisible(false)]
-    public partial class MainPage : ContentPage
+
+    public partial class CadastroPage : ContentPage
     {
         readonly FirebaseHelper firebaseHelper = new FirebaseHelper();
-
-        public MainPage()
-        {
-            InitializeComponent();
-        }
 
         protected override async void OnAppearing()
         {
@@ -27,59 +20,7 @@ namespace Rampa
 
             await FetchAllPersons();
         }
-
-
-        private async void GetPosition(object sender, EventArgs e)
-        {
-            //var locator = CrossGeolocator.Current;
-            //locator.DesiredAccuracy = 10;
-
-            //var position = await locator.GetPositionAsync(TimeSpan.FromSeconds(10));
-
-            //LongitudeLabel.Text = string.Format("{0:0.0000000}", position.Longitude);
-            //LatitudeLabel.Text = string.Format("{0:0.0000000}", position.Latitude);
-            //AltitudeLabel.Text = string.Format("{0:0.0000000}", position.Altitude);
-
-            try
-            {
-                Location location = null;
-                location = await Geolocation.GetLastKnownLocationAsync();
-
-                if (location == null)
-                {
-                    var request = new GeolocationRequest(GeolocationAccuracy.Best);
-                    location = await Geolocation.GetLocationAsync(request);
-                }
-
-                if (location != null)
-                {
-                    LongitudeLabel.Text = string.Format("{0:0.0000000}", location.Longitude);
-                    LatitudeLabel.Text = string.Format("{0:0.0000000}", location.Latitude);
-                    AltitudeLabel.Text = string.Format("{0:0.0000000}", location.Altitude);
-                }
-
-            }
-            catch (FeatureNotSupportedException fnsEx)
-            {
-                // Handle not supported on device exception
-            }
-            catch (FeatureNotEnabledException fneEx)
-            {
-                // Handle not enabled on device exception
-            }
-            catch (PermissionException pEx)
-            {
-                // Handle permission exception
-            }
-            catch (Exception ex)
-            {
-                // Unable to get location
-            }
-        }
-
-
-
-
+        
         private async Task FetchAllPersons()
         {
             var allPersons = await firebaseHelper.GetAllPersons();

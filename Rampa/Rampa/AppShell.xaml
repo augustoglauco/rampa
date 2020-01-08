@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:controls="clr-namespace:Rampa.Controls"
+       xmlns:views="clr-namespace:Rampa.Views"
+       FlyoutBackgroundImage="photo.jpg"
+       FlyoutBackgroundImageAspect="AspectFill"
+       FlyoutHeaderBehavior="CollapseOnScroll"
+       Navigating="OnNavigating"
+       Navigated="OnNavigated"
+       x:Class="Rampa.AppShell">
+    <Shell.Resources>
+        <Style x:Key="BaseStyle"
+               TargetType="Element">
+            <Setter Property="Shell.BackgroundColor"
+                    Value="#455A64" />
+            <Setter Property="Shell.ForegroundColor"
+                    Value="White" />
+            <Setter Property="Shell.TitleColor"
+                    Value="White" />
+            <Setter Property="Shell.DisabledColor"
+                    Value="#B4FFFFFF" />
+            <Setter Property="Shell.UnselectedColor"
+                    Value="#95FFFFFF" />
+        </Style>
+        <Style TargetType="ShellItem"
+               BasedOn="{StaticResource BaseStyle}" />
+        
+        <Style x:Key="PosicaoShell"
+               TargetType="Element"
+               BasedOn="{StaticResource BaseStyle}">
+            <Setter Property="Shell.BackgroundColor"
+                    Value="#039BE6" />
+        </Style>
+        <Style x:Key="CadastroShell"
+               TargetType="Element"
+               BasedOn="{StaticResource BaseStyle}">
+            <Setter Property="Shell.BackgroundColor"
+                    Value="#689F39" />
+        </Style>
+        <Style x:Key="PilotosShell"
+               TargetType="Element"
+               BasedOn="{StaticResource BaseStyle}">
+            <Setter Property="Shell.BackgroundColor"
+                    Value="#ED3B3B" />
+        </Style>
+        <Style x:Key="CondicaoShell"
+               TargetType="Element"
+               BasedOn="{StaticResource BaseStyle}">
+            <Setter Property="Shell.BackgroundColor"
+                    Value="#546DFE" />
+        </Style>
+        <Style x:Key="AboutShell"
+               TargetType="Element"
+               BasedOn="{StaticResource BaseStyle}">
+            <Setter Property="Shell.BackgroundColor"
+                    Value="#96d1ff" />
+        </Style>
+    </Shell.Resources>
+
+    <Shell.FlyoutHeader>
+        <controls:FlyoutHeader />
+    </Shell.FlyoutHeader>
+  
+    <FlyoutItem Route="animals"
+                Title="Parque da Cidade"
+                FlyoutDisplayOptions="AsMultipleItems">
+         <!--<Tab Title="Domestic"
+             Route="domestic"
+             Icon="paw.png">
+            <ShellContent Route="cats"
+                          Style="{StaticResource PosicaoShell}"
+                          Title="Posição"
+                          Icon="cat.png"
+                          ContentTemplate="{DataTemplate views:CadastroPage}" />
+            <ShellContent Route="dogs"
+                          Style="{StaticResource PosicaoShell}"
+                          Title="Dogs"
+                          Icon="dog.png"
+                          ContentTemplate="{DataTemplate views:CadastroPage}" />
+        </Tab>-->
+
+        <!-- 
+
+        Shell has implicit conversion operators that enable the Shell visual hierarchy to be simplified.
+        This is possible because a subclassed Shell object can only ever contain a FlyoutItem object or a TabBar object,
+        which can only ever contain Tab objects, which can only ever contain ShellContent objects.
+
+        The code below demonstrates using these implicit conversion operators to simplify the visual hierarchy. Code that
+        relies on the implicit conversion operators will produce intellisense errors in the Visual Studio XAML editor. However,
+        this code is valid and does build.
+               
+        -->
+        <ShellContent Route="cats"
+                      Style="{StaticResource CadastroShell}"
+                      Title="Posição"
+                      Icon="monkey.png"
+                      ContentTemplate="{DataTemplate views:X}" />
+
+
+        <ShellContent Route="monkeys"
+                      Style="{StaticResource CadastroShell}"
+                      Title="Cadastro"
+                      Icon="monkey.png"
+                      ContentTemplate="{DataTemplate views:X}" />
+        <ShellContent Route="elephants"
+                      Style="{StaticResource PilotosShell}"
+                      Title="Pilotos"
+                      Icon="elephant.png"
+                      ContentTemplate="{DataTemplate views:X}" />
+        <ShellContent Route="bears"
+                      Style="{StaticResource CondicaoShell}"
+                      Title="Condição"
+                      Icon="bear.png"
+                      ContentTemplate="{DataTemplate views:X}" />
+    </FlyoutItem>
+
+    <ShellContent Route="about"
+                  Style="{StaticResource AboutShell}"
+                  Title="About"
+                  Icon="info.png"
+                  ContentTemplate="{DataTemplate views:X}" />
+
+    <!--<MenuItem Text="Random"
+              IconImageSource="random.png"
+              Command="{Binding RandomPageCommand}" />
+    <MenuItem Text="Help"
+              IconImageSource="help.png"
+              Command="{Binding HelpCommand}"
+              CommandParameter="https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell" />-->
+
+</Shell>

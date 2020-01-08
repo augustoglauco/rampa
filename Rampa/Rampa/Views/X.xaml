@@ -2,12 +2,8 @@
 <ContentPage Visual="Material"
              xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
-             x:Class="Rampa.MainPage"
-             xmlns:local="clr-namespace:Rampa;assembly=Rampa"
-             xmlns:behavior="clr-namespace:Rampa.Behavior;assembly=Rampa">
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design" 
+             x:Class="Rampa.Views.X" >
 
     <StackLayout Margin="0,25,0,0">
         <Label Text="Altitude" FontSize="20" HorizontalOptions="CenterAndExpand" />
@@ -17,8 +13,6 @@
         <Label Text="Longitude" FontSize="20" HorizontalOptions="CenterAndExpand" />
         <Label x:Name="LongitudeLabel" FontSize="30" HorizontalOptions="CenterAndExpand" />
         <Button Text="Localização" Clicked="GetPosition" BackgroundColor="#EEE"  />
-
-
 
     </StackLayout>
 

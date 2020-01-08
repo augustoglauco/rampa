@@ -5,7 +5,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Rampa.MainPage"
+             x:Class="Rampa.Views.CadastroPage"
              xmlns:local="clr-namespace:Rampa;assembly=Rampa"
              xmlns:behavior="clr-namespace:Rampa.Behavior;assembly=Rampa">
 
