@@ -102,7 +102,7 @@
                       Style="{StaticResource CadastroShell}"
                       Title="Cadastro"
                       Icon="monkey.png"
-                      ContentTemplate="{DataTemplate views:CadastroPage}" />
+                      ContentTemplate="{DataTemplate views:CadastroPiloto}" />
         <ShellContent Route="elephants"
                       Style="{StaticResource PilotosShell}"
                       Title="Pilotos"

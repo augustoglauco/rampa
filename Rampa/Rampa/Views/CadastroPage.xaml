@@ -20,12 +20,10 @@
             <Entry x:Name="TxtPhone" Placeholder="Phone (Required)" Keyboard="Numeric" ></Entry>
 
             <StackLayout  HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
-                <Button x:Name="BtnAdd" WidthRequest="200" Text="Add" Clicked="BtnAdd_Clicked"/>
-                <Button x:Name="BtnDelete" WidthRequest="200" Text="Delete" Clicked="BtnDelete_Clicked" />
-            </StackLayout>
+                <Button x:Name="BtnAdd" WidthRequest="100" Text="Add" Clicked="BtnAdd_Clicked"/>
+                <Button x:Name="BtnDelete" WidthRequest="100" Text="Delete" Clicked="BtnDelete_Clicked" />
+                <Button x:Name="BtnUpdate" WidthRequest="100" Text="Update" Clicked="BtnUpdate_Clicked" />
 
-            <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
-                <Button x:Name="BtnUpdate" WidthRequest="200" Text="Update" Clicked="BtnUpdate_Clicked" />
             </StackLayout>
 
             <ListView x:Name="LstPersons" ItemSelected="LstPersons_OnItemSelected">

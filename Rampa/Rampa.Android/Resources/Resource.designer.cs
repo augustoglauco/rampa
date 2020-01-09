@@ -26,6 +26,137 @@ namespace Rampa.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::Plugin.Media.Resource.Attribute.alpha = global::Rampa.Droid.Resource.Attribute.alpha;
+			global::Plugin.Media.Resource.Attribute.font = global::Rampa.Droid.Resource.Attribute.font;
+			global::Plugin.Media.Resource.Attribute.fontProviderAuthority = global::Rampa.Droid.Resource.Attribute.fontProviderAuthority;
+			global::Plugin.Media.Resource.Attribute.fontProviderCerts = global::Rampa.Droid.Resource.Attribute.fontProviderCerts;
+			global::Plugin.Media.Resource.Attribute.fontProviderFetchStrategy = global::Rampa.Droid.Resource.Attribute.fontProviderFetchStrategy;
+			global::Plugin.Media.Resource.Attribute.fontProviderFetchTimeout = global::Rampa.Droid.Resource.Attribute.fontProviderFetchTimeout;
+			global::Plugin.Media.Resource.Attribute.fontProviderPackage = global::Rampa.Droid.Resource.Attribute.fontProviderPackage;
+			global::Plugin.Media.Resource.Attribute.fontProviderQuery = global::Rampa.Droid.Resource.Attribute.fontProviderQuery;
+			global::Plugin.Media.Resource.Attribute.fontStyle = global::Rampa.Droid.Resource.Attribute.fontStyle;
+			global::Plugin.Media.Resource.Attribute.fontVariationSettings = global::Rampa.Droid.Resource.Attribute.fontVariationSettings;
+			global::Plugin.Media.Resource.Attribute.fontWeight = global::Rampa.Droid.Resource.Attribute.fontWeight;
+			global::Plugin.Media.Resource.Attribute.ttcIndex = global::Rampa.Droid.Resource.Attribute.ttcIndex;
+			global::Plugin.Media.Resource.Color.notification_action_color_filter = global::Rampa.Droid.Resource.Color.notification_action_color_filter;
+			global::Plugin.Media.Resource.Color.notification_icon_bg_color = global::Rampa.Droid.Resource.Color.notification_icon_bg_color;
+			global::Plugin.Media.Resource.Color.ripple_material_light = global::Rampa.Droid.Resource.Color.ripple_material_light;
+			global::Plugin.Media.Resource.Color.secondary_text_default_material_light = global::Rampa.Droid.Resource.Color.secondary_text_default_material_light;
+			global::Plugin.Media.Resource.Dimension.compat_button_inset_horizontal_material = global::Rampa.Droid.Resource.Dimension.compat_button_inset_horizontal_material;
+			global::Plugin.Media.Resource.Dimension.compat_button_inset_vertical_material = global::Rampa.Droid.Resource.Dimension.compat_button_inset_vertical_material;
+			global::Plugin.Media.Resource.Dimension.compat_button_padding_horizontal_material = global::Rampa.Droid.Resource.Dimension.compat_button_padding_horizontal_material;
+			global::Plugin.Media.Resource.Dimension.compat_button_padding_vertical_material = global::Rampa.Droid.Resource.Dimension.compat_button_padding_vertical_material;
+			global::Plugin.Media.Resource.Dimension.compat_control_corner_material = global::Rampa.Droid.Resource.Dimension.compat_control_corner_material;
+			global::Plugin.Media.Resource.Dimension.compat_notification_large_icon_max_height = global::Rampa.Droid.Resource.Dimension.compat_notification_large_icon_max_height;
+			global::Plugin.Media.Resource.Dimension.compat_notification_large_icon_max_width = global::Rampa.Droid.Resource.Dimension.compat_notification_large_icon_max_width;
+			global::Plugin.Media.Resource.Dimension.notification_action_icon_size = global::Rampa.Droid.Resource.Dimension.notification_action_icon_size;
+			global::Plugin.Media.Resource.Dimension.notification_action_text_size = global::Rampa.Droid.Resource.Dimension.notification_action_text_size;
+			global::Plugin.Media.Resource.Dimension.notification_big_circle_margin = global::Rampa.Droid.Resource.Dimension.notification_big_circle_margin;
+			global::Plugin.Media.Resource.Dimension.notification_content_margin_start = global::Rampa.Droid.Resource.Dimension.notification_content_margin_start;
+			global::Plugin.Media.Resource.Dimension.notification_large_icon_height = global::Rampa.Droid.Resource.Dimension.notification_large_icon_height;
+			global::Plugin.Media.Resource.Dimension.notification_large_icon_width = global::Rampa.Droid.Resource.Dimension.notification_large_icon_width;
+			global::Plugin.Media.Resource.Dimension.notification_main_column_padding_top = global::Rampa.Droid.Resource.Dimension.notification_main_column_padding_top;
+			global::Plugin.Media.Resource.Dimension.notification_media_narrow_margin = global::Rampa.Droid.Resource.Dimension.notification_media_narrow_margin;
+			global::Plugin.Media.Resource.Dimension.notification_right_icon_size = global::Rampa.Droid.Resource.Dimension.notification_right_icon_size;
+			global::Plugin.Media.Resource.Dimension.notification_right_side_padding_top = global::Rampa.Droid.Resource.Dimension.notification_right_side_padding_top;
+			global::Plugin.Media.Resource.Dimension.notification_small_icon_background_padding = global::Rampa.Droid.Resource.Dimension.notification_small_icon_background_padding;
+			global::Plugin.Media.Resource.Dimension.notification_small_icon_size_as_large = global::Rampa.Droid.Resource.Dimension.notification_small_icon_size_as_large;
+			global::Plugin.Media.Resource.Dimension.notification_subtext_size = global::Rampa.Droid.Resource.Dimension.notification_subtext_size;
+			global::Plugin.Media.Resource.Dimension.notification_top_pad = global::Rampa.Droid.Resource.Dimension.notification_top_pad;
+			global::Plugin.Media.Resource.Dimension.notification_top_pad_large_text = global::Rampa.Droid.Resource.Dimension.notification_top_pad_large_text;
+			global::Plugin.Media.Resource.Drawable.notification_action_background = global::Rampa.Droid.Resource.Drawable.notification_action_background;
+			global::Plugin.Media.Resource.Drawable.notification_bg = global::Rampa.Droid.Resource.Drawable.notification_bg;
+			global::Plugin.Media.Resource.Drawable.notification_bg_low = global::Rampa.Droid.Resource.Drawable.notification_bg_low;
+			global::Plugin.Media.Resource.Drawable.notification_bg_low_normal = global::Rampa.Droid.Resource.Drawable.notification_bg_low_normal;
+			global::Plugin.Media.Resource.Drawable.notification_bg_low_pressed = global::Rampa.Droid.Resource.Drawable.notification_bg_low_pressed;
+			global::Plugin.Media.Resource.Drawable.notification_bg_normal = global::Rampa.Droid.Resource.Drawable.notification_bg_normal;
+			global::Plugin.Media.Resource.Drawable.notification_bg_normal_pressed = global::Rampa.Droid.Resource.Drawable.notification_bg_normal_pressed;
+			global::Plugin.Media.Resource.Drawable.notification_icon_background = global::Rampa.Droid.Resource.Drawable.notification_icon_background;
+			global::Plugin.Media.Resource.Drawable.notification_template_icon_bg = global::Rampa.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::Plugin.Media.Resource.Drawable.notification_template_icon_low_bg = global::Rampa.Droid.Resource.Drawable.notification_template_icon_low_bg;
+			global::Plugin.Media.Resource.Drawable.notification_tile_bg = global::Rampa.Droid.Resource.Drawable.notification_tile_bg;
+			global::Plugin.Media.Resource.Drawable.notify_panel_notification_icon_bg = global::Rampa.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::Plugin.Media.Resource.Id.actions = global::Rampa.Droid.Resource.Id.actions;
+			global::Plugin.Media.Resource.Id.action_container = global::Rampa.Droid.Resource.Id.action_container;
+			global::Plugin.Media.Resource.Id.action_divider = global::Rampa.Droid.Resource.Id.action_divider;
+			global::Plugin.Media.Resource.Id.action_image = global::Rampa.Droid.Resource.Id.action_image;
+			global::Plugin.Media.Resource.Id.action_text = global::Rampa.Droid.Resource.Id.action_text;
+			global::Plugin.Media.Resource.Id.async = global::Rampa.Droid.Resource.Id.async;
+			global::Plugin.Media.Resource.Id.blocking = global::Rampa.Droid.Resource.Id.blocking;
+			global::Plugin.Media.Resource.Id.chronometer = global::Rampa.Droid.Resource.Id.chronometer;
+			global::Plugin.Media.Resource.Id.forever = global::Rampa.Droid.Resource.Id.forever;
+			global::Plugin.Media.Resource.Id.icon = global::Rampa.Droid.Resource.Id.icon;
+			global::Plugin.Media.Resource.Id.icon_group = global::Rampa.Droid.Resource.Id.icon_group;
+			global::Plugin.Media.Resource.Id.info = global::Rampa.Droid.Resource.Id.info;
+			global::Plugin.Media.Resource.Id.italic = global::Rampa.Droid.Resource.Id.italic;
+			global::Plugin.Media.Resource.Id.line1 = global::Rampa.Droid.Resource.Id.line1;
+			global::Plugin.Media.Resource.Id.line3 = global::Rampa.Droid.Resource.Id.line3;
+			global::Plugin.Media.Resource.Id.normal = global::Rampa.Droid.Resource.Id.normal;
+			global::Plugin.Media.Resource.Id.notification_background = global::Rampa.Droid.Resource.Id.notification_background;
+			global::Plugin.Media.Resource.Id.notification_main_column = global::Rampa.Droid.Resource.Id.notification_main_column;
+			global::Plugin.Media.Resource.Id.notification_main_column_container = global::Rampa.Droid.Resource.Id.notification_main_column_container;
+			global::Plugin.Media.Resource.Id.right_icon = global::Rampa.Droid.Resource.Id.right_icon;
+			global::Plugin.Media.Resource.Id.right_side = global::Rampa.Droid.Resource.Id.right_side;
+			global::Plugin.Media.Resource.Id.tag_transition_group = global::Rampa.Droid.Resource.Id.tag_transition_group;
+			global::Plugin.Media.Resource.Id.tag_unhandled_key_event_manager = global::Rampa.Droid.Resource.Id.tag_unhandled_key_event_manager;
+			global::Plugin.Media.Resource.Id.tag_unhandled_key_listeners = global::Rampa.Droid.Resource.Id.tag_unhandled_key_listeners;
+			global::Plugin.Media.Resource.Id.text = global::Rampa.Droid.Resource.Id.text;
+			global::Plugin.Media.Resource.Id.text2 = global::Rampa.Droid.Resource.Id.text2;
+			global::Plugin.Media.Resource.Id.time = global::Rampa.Droid.Resource.Id.time;
+			global::Plugin.Media.Resource.Id.title = global::Rampa.Droid.Resource.Id.title;
+			global::Plugin.Media.Resource.Integer.status_bar_notification_info_maxnum = global::Rampa.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Plugin.Media.Resource.Layout.notification_action = global::Rampa.Droid.Resource.Layout.notification_action;
+			global::Plugin.Media.Resource.Layout.notification_action_tombstone = global::Rampa.Droid.Resource.Layout.notification_action_tombstone;
+			global::Plugin.Media.Resource.Layout.notification_template_custom_big = global::Rampa.Droid.Resource.Layout.notification_template_custom_big;
+			global::Plugin.Media.Resource.Layout.notification_template_icon_group = global::Rampa.Droid.Resource.Layout.notification_template_icon_group;
+			global::Plugin.Media.Resource.Layout.notification_template_part_chronometer = global::Rampa.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::Plugin.Media.Resource.Layout.notification_template_part_time = global::Rampa.Droid.Resource.Layout.notification_template_part_time;
+			global::Plugin.Media.Resource.String.status_bar_notification_info_overflow = global::Rampa.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::Plugin.Media.Resource.Style.TextAppearance_Compat_Notification = global::Rampa.Droid.Resource.Style.TextAppearance_Compat_Notification;
+			global::Plugin.Media.Resource.Style.TextAppearance_Compat_Notification_Info = global::Rampa.Droid.Resource.Style.TextAppearance_Compat_Notification_Info;
+			global::Plugin.Media.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::Rampa.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2;
+			global::Plugin.Media.Resource.Style.TextAppearance_Compat_Notification_Time = global::Rampa.Droid.Resource.Style.TextAppearance_Compat_Notification_Time;
+			global::Plugin.Media.Resource.Style.TextAppearance_Compat_Notification_Title = global::Rampa.Droid.Resource.Style.TextAppearance_Compat_Notification_Title;
+			global::Plugin.Media.Resource.Style.Widget_Compat_NotificationActionContainer = global::Rampa.Droid.Resource.Style.Widget_Compat_NotificationActionContainer;
+			global::Plugin.Media.Resource.Style.Widget_Compat_NotificationActionText = global::Rampa.Droid.Resource.Style.Widget_Compat_NotificationActionText;
+			global::Plugin.Media.Resource.Styleable.ColorStateListItem = global::Rampa.Droid.Resource.Styleable.ColorStateListItem;
+			global::Plugin.Media.Resource.Styleable.ColorStateListItem_alpha = global::Rampa.Droid.Resource.Styleable.ColorStateListItem_alpha;
+			global::Plugin.Media.Resource.Styleable.ColorStateListItem_android_alpha = global::Rampa.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::Plugin.Media.Resource.Styleable.ColorStateListItem_android_color = global::Rampa.Droid.Resource.Styleable.ColorStateListItem_android_color;
+			global::Plugin.Media.Resource.Styleable.FontFamily = global::Rampa.Droid.Resource.Styleable.FontFamily;
+			global::Plugin.Media.Resource.Styleable.FontFamilyFont = global::Rampa.Droid.Resource.Styleable.FontFamilyFont;
+			global::Plugin.Media.Resource.Styleable.FontFamilyFont_android_font = global::Rampa.Droid.Resource.Styleable.FontFamilyFont_android_font;
+			global::Plugin.Media.Resource.Styleable.FontFamilyFont_android_fontStyle = global::Rampa.Droid.Resource.Styleable.FontFamilyFont_android_fontStyle;
+			global::Plugin.Media.Resource.Styleable.FontFamilyFont_android_fontVariationSettings = global::Rampa.Droid.Resource.Styleable.FontFamilyFont_android_fontVariationSettings;
+			global::Plugin.Media.Resource.Styleable.FontFamilyFont_android_fontWeight = global::Rampa.Droid.Resource.Styleable.FontFamilyFont_android_fontWeight;
+			global::Plugin.Media.Resource.Styleable.FontFamilyFont_android_ttcIndex = global::Rampa.Droid.Resource.Styleable.FontFamilyFont_android_ttcIndex;
+			global::Plugin.Media.Resource.Styleable.FontFamilyFont_font = global::Rampa.Droid.Resource.Styleable.FontFamilyFont_font;
+			global::Plugin.Media.Resource.Styleable.FontFamilyFont_fontStyle = global::Rampa.Droid.Resource.Styleable.FontFamilyFont_fontStyle;
+			global::Plugin.Media.Resource.Styleable.FontFamilyFont_fontVariationSettings = global::Rampa.Droid.Resource.Styleable.FontFamilyFont_fontVariationSettings;
+			global::Plugin.Media.Resource.Styleable.FontFamilyFont_fontWeight = global::Rampa.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
+			global::Plugin.Media.Resource.Styleable.FontFamilyFont_ttcIndex = global::Rampa.Droid.Resource.Styleable.FontFamilyFont_ttcIndex;
+			global::Plugin.Media.Resource.Styleable.FontFamily_fontProviderAuthority = global::Rampa.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::Plugin.Media.Resource.Styleable.FontFamily_fontProviderCerts = global::Rampa.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::Plugin.Media.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::Rampa.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::Plugin.Media.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::Rampa.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::Plugin.Media.Resource.Styleable.FontFamily_fontProviderPackage = global::Rampa.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::Plugin.Media.Resource.Styleable.FontFamily_fontProviderQuery = global::Rampa.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
+			global::Plugin.Media.Resource.Styleable.GradientColor = global::Rampa.Droid.Resource.Styleable.GradientColor;
+			global::Plugin.Media.Resource.Styleable.GradientColorItem = global::Rampa.Droid.Resource.Styleable.GradientColorItem;
+			global::Plugin.Media.Resource.Styleable.GradientColorItem_android_color = global::Rampa.Droid.Resource.Styleable.GradientColorItem_android_color;
+			global::Plugin.Media.Resource.Styleable.GradientColorItem_android_offset = global::Rampa.Droid.Resource.Styleable.GradientColorItem_android_offset;
+			global::Plugin.Media.Resource.Styleable.GradientColor_android_centerColor = global::Rampa.Droid.Resource.Styleable.GradientColor_android_centerColor;
+			global::Plugin.Media.Resource.Styleable.GradientColor_android_centerX = global::Rampa.Droid.Resource.Styleable.GradientColor_android_centerX;
+			global::Plugin.Media.Resource.Styleable.GradientColor_android_centerY = global::Rampa.Droid.Resource.Styleable.GradientColor_android_centerY;
+			global::Plugin.Media.Resource.Styleable.GradientColor_android_endColor = global::Rampa.Droid.Resource.Styleable.GradientColor_android_endColor;
+			global::Plugin.Media.Resource.Styleable.GradientColor_android_endX = global::Rampa.Droid.Resource.Styleable.GradientColor_android_endX;
+			global::Plugin.Media.Resource.Styleable.GradientColor_android_endY = global::Rampa.Droid.Resource.Styleable.GradientColor_android_endY;
+			global::Plugin.Media.Resource.Styleable.GradientColor_android_gradientRadius = global::Rampa.Droid.Resource.Styleable.GradientColor_android_gradientRadius;
+			global::Plugin.Media.Resource.Styleable.GradientColor_android_startColor = global::Rampa.Droid.Resource.Styleable.GradientColor_android_startColor;
+			global::Plugin.Media.Resource.Styleable.GradientColor_android_startX = global::Rampa.Droid.Resource.Styleable.GradientColor_android_startX;
+			global::Plugin.Media.Resource.Styleable.GradientColor_android_startY = global::Rampa.Droid.Resource.Styleable.GradientColor_android_startY;
+			global::Plugin.Media.Resource.Styleable.GradientColor_android_tileMode = global::Rampa.Droid.Resource.Styleable.GradientColor_android_tileMode;
+			global::Plugin.Media.Resource.Styleable.GradientColor_android_type = global::Rampa.Droid.Resource.Styleable.GradientColor_android_type;
 			global::Xamarin.Essentials.Resource.Attribute.alpha = global::Rampa.Droid.Resource.Attribute.alpha;
 			global::Xamarin.Essentials.Resource.Attribute.coordinatorLayoutStyle = global::Rampa.Droid.Resource.Attribute.coordinatorLayoutStyle;
 			global::Xamarin.Essentials.Resource.Attribute.font = global::Rampa.Droid.Resource.Attribute.font;
@@ -91,19 +222,19 @@ namespace Rampa.Droid
 			global::Xamarin.Essentials.Resource.Drawable.notification_template_icon_low_bg = global::Rampa.Droid.Resource.Drawable.notification_template_icon_low_bg;
 			global::Xamarin.Essentials.Resource.Drawable.notification_tile_bg = global::Rampa.Droid.Resource.Drawable.notification_tile_bg;
 			global::Xamarin.Essentials.Resource.Drawable.notify_panel_notification_icon_bg = global::Rampa.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::Xamarin.Essentials.Resource.Id.actions = global::Rampa.Droid.Resource.Id.actions;
 			global::Xamarin.Essentials.Resource.Id.action_container = global::Rampa.Droid.Resource.Id.action_container;
 			global::Xamarin.Essentials.Resource.Id.action_divider = global::Rampa.Droid.Resource.Id.action_divider;
 			global::Xamarin.Essentials.Resource.Id.action_image = global::Rampa.Droid.Resource.Id.action_image;
 			global::Xamarin.Essentials.Resource.Id.action_text = global::Rampa.Droid.Resource.Id.action_text;
-			global::Xamarin.Essentials.Resource.Id.actions = global::Rampa.Droid.Resource.Id.actions;
 			global::Xamarin.Essentials.Resource.Id.all = global::Rampa.Droid.Resource.Id.all;
 			global::Xamarin.Essentials.Resource.Id.async = global::Rampa.Droid.Resource.Id.async;
 			global::Xamarin.Essentials.Resource.Id.blocking = global::Rampa.Droid.Resource.Id.blocking;
 			global::Xamarin.Essentials.Resource.Id.bottom = global::Rampa.Droid.Resource.Id.bottom;
 			global::Xamarin.Essentials.Resource.Id.browser_actions_header_text = global::Rampa.Droid.Resource.Id.browser_actions_header_text;
+			global::Xamarin.Essentials.Resource.Id.browser_actions_menu_items = global::Rampa.Droid.Resource.Id.browser_actions_menu_items;
 			global::Xamarin.Essentials.Resource.Id.browser_actions_menu_item_icon = global::Rampa.Droid.Resource.Id.browser_actions_menu_item_icon;
 			global::Xamarin.Essentials.Resource.Id.browser_actions_menu_item_text = global::Rampa.Droid.Resource.Id.browser_actions_menu_item_text;
-			global::Xamarin.Essentials.Resource.Id.browser_actions_menu_items = global::Rampa.Droid.Resource.Id.browser_actions_menu_items;
 			global::Xamarin.Essentials.Resource.Id.browser_actions_menu_view = global::Rampa.Droid.Resource.Id.browser_actions_menu_view;
 			global::Xamarin.Essentials.Resource.Id.center = global::Rampa.Droid.Resource.Id.center;
 			global::Xamarin.Essentials.Resource.Id.center_horizontal = global::Rampa.Droid.Resource.Id.center_horizontal;
@@ -158,14 +289,12 @@ namespace Rampa.Droid
 			global::Xamarin.Essentials.Resource.Style.Widget_Compat_NotificationActionContainer = global::Rampa.Droid.Resource.Style.Widget_Compat_NotificationActionContainer;
 			global::Xamarin.Essentials.Resource.Style.Widget_Compat_NotificationActionText = global::Rampa.Droid.Resource.Style.Widget_Compat_NotificationActionText;
 			global::Xamarin.Essentials.Resource.Style.Widget_Support_CoordinatorLayout = global::Rampa.Droid.Resource.Style.Widget_Support_CoordinatorLayout;
-			global::Xamarin.Essentials.Resource.Xml.xamarin_essentials_fileprovider_file_paths = global::Rampa.Droid.Resource.Xml.xamarin_essentials_fileprovider_file_paths;
 			global::Xamarin.Essentials.Resource.Styleable.ColorStateListItem = global::Rampa.Droid.Resource.Styleable.ColorStateListItem;
 			global::Xamarin.Essentials.Resource.Styleable.ColorStateListItem_alpha = global::Rampa.Droid.Resource.Styleable.ColorStateListItem_alpha;
 			global::Xamarin.Essentials.Resource.Styleable.ColorStateListItem_android_alpha = global::Rampa.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
 			global::Xamarin.Essentials.Resource.Styleable.ColorStateListItem_android_color = global::Rampa.Droid.Resource.Styleable.ColorStateListItem_android_color;
 			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout = global::Rampa.Droid.Resource.Styleable.CoordinatorLayout;
 			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_keylines = global::Rampa.Droid.Resource.Styleable.CoordinatorLayout_keylines;
-			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::Rampa.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
 			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout = global::Rampa.Droid.Resource.Styleable.CoordinatorLayout_Layout;
 			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::Rampa.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
 			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::Rampa.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
@@ -174,13 +303,8 @@ namespace Rampa.Droid
 			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::Rampa.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
 			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::Rampa.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
 			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::Rampa.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::Rampa.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
 			global::Xamarin.Essentials.Resource.Styleable.FontFamily = global::Rampa.Droid.Resource.Styleable.FontFamily;
-			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderAuthority = global::Rampa.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
-			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderCerts = global::Rampa.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
-			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::Rampa.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
-			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::Rampa.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
-			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderPackage = global::Rampa.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
-			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderQuery = global::Rampa.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
 			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont = global::Rampa.Droid.Resource.Styleable.FontFamilyFont;
 			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_android_font = global::Rampa.Droid.Resource.Styleable.FontFamilyFont_android_font;
 			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_android_fontStyle = global::Rampa.Droid.Resource.Styleable.FontFamilyFont_android_fontStyle;
@@ -192,7 +316,16 @@ namespace Rampa.Droid
 			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_fontVariationSettings = global::Rampa.Droid.Resource.Styleable.FontFamilyFont_fontVariationSettings;
 			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_fontWeight = global::Rampa.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
 			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_ttcIndex = global::Rampa.Droid.Resource.Styleable.FontFamilyFont_ttcIndex;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderAuthority = global::Rampa.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderCerts = global::Rampa.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::Rampa.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::Rampa.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderPackage = global::Rampa.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderQuery = global::Rampa.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
 			global::Xamarin.Essentials.Resource.Styleable.GradientColor = global::Rampa.Droid.Resource.Styleable.GradientColor;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColorItem = global::Rampa.Droid.Resource.Styleable.GradientColorItem;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColorItem_android_color = global::Rampa.Droid.Resource.Styleable.GradientColorItem_android_color;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColorItem_android_offset = global::Rampa.Droid.Resource.Styleable.GradientColorItem_android_offset;
 			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_centerColor = global::Rampa.Droid.Resource.Styleable.GradientColor_android_centerColor;
 			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_centerX = global::Rampa.Droid.Resource.Styleable.GradientColor_android_centerX;
 			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_centerY = global::Rampa.Droid.Resource.Styleable.GradientColor_android_centerY;
@@ -205,9 +338,7 @@ namespace Rampa.Droid
 			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_startY = global::Rampa.Droid.Resource.Styleable.GradientColor_android_startY;
 			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_tileMode = global::Rampa.Droid.Resource.Styleable.GradientColor_android_tileMode;
 			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_type = global::Rampa.Droid.Resource.Styleable.GradientColor_android_type;
-			global::Xamarin.Essentials.Resource.Styleable.GradientColorItem = global::Rampa.Droid.Resource.Styleable.GradientColorItem;
-			global::Xamarin.Essentials.Resource.Styleable.GradientColorItem_android_color = global::Rampa.Droid.Resource.Styleable.GradientColorItem_android_color;
-			global::Xamarin.Essentials.Resource.Styleable.GradientColorItem_android_offset = global::Rampa.Droid.Resource.Styleable.GradientColorItem_android_offset;
+			global::Xamarin.Essentials.Resource.Xml.xamarin_essentials_fileprovider_file_paths = global::Rampa.Droid.Resource.Xml.xamarin_essentials_fileprovider_file_paths;
 			global::Xamarin.Forms.Material.Android.Resource.Animation.abc_fade_in = global::Rampa.Droid.Resource.Animation.abc_fade_in;
 			global::Xamarin.Forms.Material.Android.Resource.Animation.abc_fade_out = global::Rampa.Droid.Resource.Animation.abc_fade_out;
 			global::Xamarin.Forms.Material.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::Rampa.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
@@ -9115,28 +9246,25 @@ namespace Rampa.Droid
 			public const int design_tab_indicator_anim_duration_ms = 2131296263;
 			
 			// aapt resource value: 0x7F090008
-			public const int google_play_services_version = 2131296264;
+			public const int hide_password_duration = 2131296264;
 			
 			// aapt resource value: 0x7F090009
-			public const int hide_password_duration = 2131296265;
+			public const int mtrl_btn_anim_delay_ms = 2131296265;
 			
 			// aapt resource value: 0x7F09000A
-			public const int mtrl_btn_anim_delay_ms = 2131296266;
+			public const int mtrl_btn_anim_duration_ms = 2131296266;
 			
 			// aapt resource value: 0x7F09000B
-			public const int mtrl_btn_anim_duration_ms = 2131296267;
+			public const int mtrl_chip_anim_duration = 2131296267;
 			
 			// aapt resource value: 0x7F09000C
-			public const int mtrl_chip_anim_duration = 2131296268;
+			public const int mtrl_tab_indicator_anim_duration_ms = 2131296268;
 			
 			// aapt resource value: 0x7F09000D
-			public const int mtrl_tab_indicator_anim_duration_ms = 2131296269;
+			public const int show_password_duration = 2131296269;
 			
 			// aapt resource value: 0x7F09000E
-			public const int show_password_duration = 2131296270;
-			
-			// aapt resource value: 0x7F09000F
-			public const int status_bar_notification_info_maxnum = 2131296271;
+			public const int status_bar_notification_info_maxnum = 2131296270;
 			
 			static Integer()
 			{
@@ -9560,64 +9688,37 @@ namespace Rampa.Droid
 			public const int character_counter_pattern = 2131558442;
 			
 			// aapt resource value: 0x7F0D002B
-			public const int common_google_play_services_unknown_issue = 2131558443;
+			public const int fab_transformation_scrim_behavior = 2131558443;
 			
 			// aapt resource value: 0x7F0D002C
-			public const int default_web_client_id = 2131558444;
+			public const int fab_transformation_sheet_behavior = 2131558444;
 			
 			// aapt resource value: 0x7F0D002D
-			public const int fab_transformation_scrim_behavior = 2131558445;
+			public const int hide_bottom_view_on_scroll_behavior = 2131558445;
 			
 			// aapt resource value: 0x7F0D002E
-			public const int fab_transformation_sheet_behavior = 2131558446;
+			public const int mtrl_chip_close_icon_content_description = 2131558446;
 			
 			// aapt resource value: 0x7F0D002F
-			public const int firebase_database_url = 2131558447;
+			public const int password_toggle_content_description = 2131558447;
 			
 			// aapt resource value: 0x7F0D0030
-			public const int gcm_defaultSenderId = 2131558448;
+			public const int path_password_eye = 2131558448;
 			
 			// aapt resource value: 0x7F0D0031
-			public const int google_api_key = 2131558449;
+			public const int path_password_eye_mask_strike_through = 2131558449;
 			
 			// aapt resource value: 0x7F0D0032
-			public const int google_app_id = 2131558450;
+			public const int path_password_eye_mask_visible = 2131558450;
 			
 			// aapt resource value: 0x7F0D0033
-			public const int google_crash_reporting_api_key = 2131558451;
+			public const int path_password_strike_through = 2131558451;
 			
 			// aapt resource value: 0x7F0D0034
-			public const int google_storage_bucket = 2131558452;
+			public const int search_menu_title = 2131558452;
 			
 			// aapt resource value: 0x7F0D0035
-			public const int hide_bottom_view_on_scroll_behavior = 2131558453;
-			
-			// aapt resource value: 0x7F0D0036
-			public const int mtrl_chip_close_icon_content_description = 2131558454;
-			
-			// aapt resource value: 0x7F0D0037
-			public const int password_toggle_content_description = 2131558455;
-			
-			// aapt resource value: 0x7F0D0038
-			public const int path_password_eye = 2131558456;
-			
-			// aapt resource value: 0x7F0D0039
-			public const int path_password_eye_mask_strike_through = 2131558457;
-			
-			// aapt resource value: 0x7F0D003A
-			public const int path_password_eye_mask_visible = 2131558458;
-			
-			// aapt resource value: 0x7F0D003B
-			public const int path_password_strike_through = 2131558459;
-			
-			// aapt resource value: 0x7F0D003C
-			public const int project_id = 2131558460;
-			
-			// aapt resource value: 0x7F0D003D
-			public const int search_menu_title = 2131558461;
-			
-			// aapt resource value: 0x7F0D003E
-			public const int status_bar_notification_info_overflow = 2131558462;
+			public const int status_bar_notification_info_overflow = 2131558453;
 			
 			static String()
 			{
