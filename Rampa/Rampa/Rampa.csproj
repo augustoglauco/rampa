@@ -20,6 +20,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views\CadastroPiloto.xaml.cs">
+      <DependentUpon>CadastroPiloto.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\X.xaml.cs">
       <DependentUpon>X.xaml</DependentUpon>
     </Compile>
