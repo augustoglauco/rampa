@@ -43,7 +43,7 @@ namespace Rampa.Views
                 {
                     LongitudeLabel.Text = string.Format("{0:0.0000000}", location.Longitude);
                     LatitudeLabel.Text = string.Format("{0:0.0000000}", location.Latitude);
-                    AltitudeLabel.Text = string.Format("{0:0.0000000}", location.Altitude);
+                    AltitudeLabel.Text = string.Format("{0:0.0}", location.Altitude);
                 }
 
             }
@@ -76,45 +76,9 @@ namespace Rampa.Views
             double altitudeAMSLInMeters = ((Math.Pow((pressao/data.PressureInHectopascals), (1/5.257)) - 1) * (temperatura + 273.15)) / 0.0065;
 
             // Process Pressure
-            Altitude2Label.Text = string.Format("{0:0.0000000}", altitudeAMSLInMeters);
-            PressaoLabel.Text = string.Format("{0:0.0000000}", data.PressureInHectopascals);
+            Altitude2Label.Text = string.Format("{0:0.0}", altitudeAMSLInMeters);
+            PressaoLabel.Text = string.Format("{0:0.0}", data.PressureInHectopascals);
              
-            try
-            {
-                Location location = null;
-                //location = await Geolocation.GetLastKnownLocationAsync();
-
-                if (location == null)
-                {
-                    var request = new GeolocationRequest(GeolocationAccuracy.Best);
-                    location = await Geolocation.GetLocationAsync(request);
-                }
-
-                if (location != null)
-                {
-                    LongitudeLabel.Text = string.Format("{0:0.0000000}", location.Longitude);
-                    LatitudeLabel.Text = string.Format("{0:0.0000000}", location.Latitude);
-                    AltitudeLabel.Text = string.Format("{0:0.0000000}", location.Altitude);
-                }
-
-            }
-            catch (FeatureNotSupportedException fnsEx)
-            {
-                // Handle not supported on device exception
-            }
-            catch (FeatureNotEnabledException fneEx)
-            {
-                // Handle not enabled on device exception
-            }
-            catch (PermissionException pEx)
-            {
-                // Handle permission exception
-            }
-            catch (Exception ex)
-            {
-                // Unable to get location
-            }
-
         }
 
         private void ToggleBarometer()

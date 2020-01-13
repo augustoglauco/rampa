@@ -91,29 +91,29 @@
         this code is valid and does build.
                
         -->
-        <ShellContent Route="cats"
+        <ShellContent Route="posicao"
                       Style="{StaticResource PosicaoShell}"
                       Title="Posição"
-                      Icon="monkey.png"
+                      Icon="compass.png"
                       ContentTemplate="{DataTemplate views:X}" />
 
 
-        <ShellContent Route="monkeys"
+        <ShellContent Route="condicao"
                       Style="{StaticResource CondicaoShell}"
                       Title="Condição"
-                      Icon="monkey.png"
+                      Icon="biruta.png"
                       ContentTemplate="{DataTemplate views:X}" />
         
-        <ShellContent Route="elephants"
+        <ShellContent Route="pilotos"
                       Style="{StaticResource PilotosShell}"
                       Title="Pilotos"
-                      Icon="elephant.png"
+                      Icon="pilot.png"
                       ContentTemplate="{DataTemplate views:X}" />
         
         <ShellContent Route="Config"
                       Style="{StaticResource  CadastroShell}"
                       Title="Config"
-                      Icon="bear.png"
+                      Icon="gear.png"
                       ContentTemplate="{DataTemplate views:ConfigPage}" />
     </FlyoutItem>
 
