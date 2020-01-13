@@ -65,18 +65,56 @@ namespace Rampa.Views
             }
         }
 
-        void Barometer_ReadingChanged(object sender, BarometerChangedEventArgs e)
+        async void Barometer_ReadingChanged(object sender, BarometerChangedEventArgs e)
         {
             var data = e.Reading;
+            float pressao =  float.Parse(Preferences.Get("PNM", "1013.25"));
+            float temperatura = float.Parse(Preferences.Get("Temperatura", "23"));
 
             // calculate altitude above mean sea level according to Standard Atmosphere 1976 model
-            double altitudeAMSLInMeters = 44330.76923076923077 * (1.0 - Math.Pow(1010 / data.PressureInHectopascals, -0.19026323650861));
+            //double altitudeAMSLInMeters = 44330.76923076923077 * (1.0 - Math.Pow(pressao / data.PressureInHectopascals, -0.19026323650861));
+            double altitudeAMSLInMeters = ((Math.Pow((pressao/data.PressureInHectopascals), (1/5.257)) - 1) * (temperatura + 273.15)) / 0.0065;
 
             // Process Pressure
-            Altitude2Label.Text = string.Format("{0:0.0000000}", altitudeAMSLInMeters/0.305);
+            Altitude2Label.Text = string.Format("{0:0.0000000}", altitudeAMSLInMeters);
             PressaoLabel.Text = string.Format("{0:0.0000000}", data.PressureInHectopascals);
 
-            // Console.WriteLine($"Reading: Pressure: {data.PressureInHectopascals} hectopascals");
+            try
+            {
+                Location location = null;
+                //location = await Geolocation.GetLastKnownLocationAsync();
+
+                if (location == null)
+                {
+                    var request = new GeolocationRequest(GeolocationAccuracy.Best);
+                    location = await Geolocation.GetLocationAsync(request);
+                }
+
+                if (location != null)
+                {
+                    LongitudeLabel.Text = string.Format("{0:0.0000000}", location.Longitude);
+                    LatitudeLabel.Text = string.Format("{0:0.0000000}", location.Latitude);
+                    AltitudeLabel.Text = string.Format("{0:0.0000000}", location.Altitude);
+                }
+
+            }
+            catch (FeatureNotSupportedException fnsEx)
+            {
+                // Handle not supported on device exception
+            }
+            catch (FeatureNotEnabledException fneEx)
+            {
+                // Handle not enabled on device exception
+            }
+            catch (PermissionException pEx)
+            {
+                // Handle permission exception
+            }
+            catch (Exception ex)
+            {
+                // Unable to get location
+            }
+
         }
 
         private void ToggleBarometer()
@@ -86,7 +124,10 @@ namespace Rampa.Views
                 if (Barometer.IsMonitoring)
                     Barometer.Stop();
                 else
+                {
                     Barometer.Start(speed);
+                    
+                }
             }
             catch (FeatureNotSupportedException fnsEx)
             {

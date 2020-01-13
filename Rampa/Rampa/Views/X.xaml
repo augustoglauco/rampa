@@ -6,19 +6,19 @@
              x:Class="Rampa.Views.X" >
 
     <StackLayout Margin="0,25,0,0">
-        <Label Text="Altitude" FontSize="20" HorizontalOptions="CenterAndExpand" />
+        <Label Text="Altitude GPS" FontSize="20" HorizontalOptions="CenterAndExpand" />
         <Label x:Name="AltitudeLabel" FontSize="30" HorizontalOptions="CenterAndExpand" />
         <Label Text="Latitude" FontSize="20" HorizontalOptions="CenterAndExpand" />
         <Label x:Name="LatitudeLabel" FontSize="30" HorizontalOptions="CenterAndExpand" />
         <Label Text="Longitude" FontSize="20" HorizontalOptions="CenterAndExpand" />
         <Label x:Name="LongitudeLabel" FontSize="30" HorizontalOptions="CenterAndExpand" />
-        <Label Text="Pressão" FontSize="20" HorizontalOptions="CenterAndExpand" />
+        <Label Text="Pressão Barométrica" FontSize="20" HorizontalOptions="CenterAndExpand" />
         <Label x:Name="PressaoLabel" FontSize="30" HorizontalOptions="CenterAndExpand" />
-        <Label Text="Altitude2" FontSize="20" HorizontalOptions="CenterAndExpand" />
+        <Label Text="Altitude Barômetro" FontSize="20" HorizontalOptions="CenterAndExpand" />
         <Label x:Name="Altitude2Label" FontSize="30" HorizontalOptions="CenterAndExpand" />
 
         <Button Text="Localização" Clicked="GetPosition" BackgroundColor="#EEE"  />
 
     </StackLayout>
-
+    
 </ContentPage>

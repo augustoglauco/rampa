@@ -99,20 +99,22 @@
 
 
         <ShellContent Route="monkeys"
-                      Style="{StaticResource CadastroShell}"
-                      Title="Cadastro"
+                      Style="{StaticResource CondicaoShell}"
+                      Title="Condição"
                       Icon="monkey.png"
-                      ContentTemplate="{DataTemplate views:CadastroPiloto}" />
+                      ContentTemplate="{DataTemplate views:X}" />
+        
         <ShellContent Route="elephants"
                       Style="{StaticResource PilotosShell}"
                       Title="Pilotos"
                       Icon="elephant.png"
                       ContentTemplate="{DataTemplate views:X}" />
-        <ShellContent Route="bears"
-                      Style="{StaticResource CondicaoShell}"
-                      Title="Condição"
+        
+        <ShellContent Route="Config"
+                      Style="{StaticResource  CadastroShell}"
+                      Title="Config"
                       Icon="bear.png"
-                      ContentTemplate="{DataTemplate views:X}" />
+                      ContentTemplate="{DataTemplate views:ConfigPage}" />
     </FlyoutItem>
 
     <ShellContent Route="about"

@@ -8,12 +8,12 @@ namespace Rampa.Views
     // Learn more about making custom code visible in the Xamarin.Forms previewer
     // by visiting https://aka.ms/xamarinforms-previewer
     [DesignTimeVisible(false)]
-    public partial class CadastroPiloto : ContentPage
+    public partial class ConfigPage : ContentPage
     {
         //readonly FirebaseHelper firebaseHelper = new FirebaseHelper();
         //public ICommand NavigateCommand { get; private set; }
 
-        public CadastroPiloto()
+        public ConfigPage()
         {
             InitializeComponent();
             VerificaId();
@@ -24,6 +24,8 @@ namespace Rampa.Views
             Preferences.Clear();
             Preferences.Set("id", LblId.Text.Trim());
             Preferences.Set("Nome", TxtName.Text.Trim());
+            Preferences.Set("Temperatura", TxtTemperatura.Text.Trim());
+            Preferences.Set("PNM", TxtPressaoNivelMar.Text.Trim());
         }
 
         private void VerificaId()
