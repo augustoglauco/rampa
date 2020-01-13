@@ -78,7 +78,7 @@ namespace Rampa.Views
             // Process Pressure
             Altitude2Label.Text = string.Format("{0:0.0000000}", altitudeAMSLInMeters);
             PressaoLabel.Text = string.Format("{0:0.0000000}", data.PressureInHectopascals);
-
+             
             try
             {
                 Location location = null;
