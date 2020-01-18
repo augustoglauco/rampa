@@ -2,8 +2,7 @@
 using System.ComponentModel;
 using Xamarin.Essentials;
 using Xamarin.Forms;
-using Rampa.Helper;
-using System.Windows.Input;
+using Rampa.Services;
 
 namespace Rampa.Views
 {
@@ -13,17 +12,22 @@ namespace Rampa.Views
     public partial class X : ContentPage
     {
         //readonly FirebaseHelper firebaseHelper = new FirebaseHelper();
-        //public ICommand NavigateCommand { get; private set; }
 
         // Set speed delay for monitoring changes.
         readonly SensorSpeed speed = SensorSpeed.UI;
-        
+
+        //public static ILocationUpdateService LocationUpdateService;
+
         public X()
         {
             InitializeComponent();
             Barometer.ReadingChanged += Barometer_ReadingChanged;
+            //LocationUpdateService.LocationChanged += LocationUpdateService_LocationChanged; ; 
+            DependencyService.Get<ILocationUpdateService>().LocationChanged += LocationUpdateService_LocationChanged; 
+            DependencyService.Get<ILocationUpdateService>().GetUserLocation();
+
             ToggleBarometer();
-            GetPosition(this, null);
+            //GetPosition(this, null);
         }
 
         private async void GetPosition(object sender, EventArgs e)
@@ -43,8 +47,16 @@ namespace Rampa.Views
                 {
                     LongitudeLabel.Text = string.Format("{0:0.0000000}", location.Longitude);
                     LatitudeLabel.Text = string.Format("{0:0.0000000}", location.Latitude);
-                    AltitudeLabel.Text = string.Format("{0:0.0}", location.Altitude);
+                    AltitudeLabel.Text = string.Format("{0:0.0}", location.Altitude) + "m";
                 }
+                else
+                {
+                    LongitudeLabel.Text = "Erro";
+                    LatitudeLabel.Text = "Erro";
+                    AltitudeLabel.Text = "Erro";
+
+                }
+
 
             }
             catch (FeatureNotSupportedException fnsEx)
@@ -65,7 +77,7 @@ namespace Rampa.Views
             }
         }
 
-        async void Barometer_ReadingChanged(object sender, BarometerChangedEventArgs e)
+        void Barometer_ReadingChanged(object sender, BarometerChangedEventArgs e)
         {
             var data = e.Reading;
             float pressao =  float.Parse(Preferences.Get("PNM", "1013.25"));
@@ -73,11 +85,13 @@ namespace Rampa.Views
 
             // calculate altitude above mean sea level according to Standard Atmosphere 1976 model
             //double altitudeAMSLInMeters = 44330.76923076923077 * (1.0 - Math.Pow(pressao / data.PressureInHectopascals, -0.19026323650861));
+
+            // calculate altitude above mean sea level according to Standard Atmosphere 1976 considering Temperature
             double altitudeAMSLInMeters = ((Math.Pow((pressao/data.PressureInHectopascals), (1/5.257)) - 1) * (temperatura + 273.15)) / 0.0065;
 
             // Process Pressure
-            Altitude2Label.Text = string.Format("{0:0.0}", altitudeAMSLInMeters);
-            PressaoLabel.Text = string.Format("{0:0.0}", data.PressureInHectopascals);
+            Altitude2Label.Text = string.Format("{0:0.0}", altitudeAMSLInMeters) + "m";
+            PressaoLabel.Text = string.Format("{0:0.0}", data.PressureInHectopascals) + "mBar";
              
         }
 
@@ -102,5 +116,19 @@ namespace Rampa.Views
                 // Other error has occurred.
             }
         }
+
+        private void LocationUpdateService_LocationChanged(object sender, ILocationEventArgs e)
+        {
+
+            LongitudeLabel.Text = string.Format("{0:0.0000000}", e.Longitude);
+            LatitudeLabel.Text = string.Format("{0:0.0000000}", e.Latitude);
+            AltitudeLabel.Text = string.Format("{0:0.0}", e.Altitude) + "m";
+
+            //Location x = new Location(e.Latitude, e.Longitude);
+
+            //Here you can get the user's location from "e" -> new Location(e.Latitude, e.Longitude);
+            //new Location is from Xamarin.Essentials Location object.
+        }
+
     }
 }

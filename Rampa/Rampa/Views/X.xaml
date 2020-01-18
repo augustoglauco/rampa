@@ -4,21 +4,123 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design" 
              x:Class="Rampa.Views.X" >
+    <ContentPage.Resources>
+        <Style x:Key="BaseStyle"
+               TargetType="Label">
 
-    <StackLayout Margin="0,25,0,0">
-        <Label Text="Altitude GPS" FontSize="20" HorizontalOptions="CenterAndExpand" />
-        <Label x:Name="AltitudeLabel" FontSize="30" HorizontalOptions="CenterAndExpand" />
-        <Label Text="Latitude" FontSize="20" HorizontalOptions="CenterAndExpand" />
-        <Label x:Name="LatitudeLabel" FontSize="30" HorizontalOptions="CenterAndExpand" />
-        <Label Text="Longitude" FontSize="20" HorizontalOptions="CenterAndExpand" />
-        <Label x:Name="LongitudeLabel" FontSize="30" HorizontalOptions="CenterAndExpand" />
-        <Label Text="Pressão Barométrica" FontSize="20" HorizontalOptions="CenterAndExpand" />
-        <Label x:Name="PressaoLabel" FontSize="30" HorizontalOptions="CenterAndExpand" />
-        <Label Text="Altitude Barômetro" FontSize="20" HorizontalOptions="CenterAndExpand" />
-        <Label x:Name="Altitude2Label" FontSize="30" HorizontalOptions="CenterAndExpand" />
 
-        <Button Text="Localização" Clicked="GetPosition" BackgroundColor="#EEE"  />
+            <Setter Property="FontSize"
+                    Value="15" />
 
-    </StackLayout>
-    
+            <Setter Property="HorizontalTextAlignment"
+                    Value="Center" />
+
+        </Style>
+
+        <Style x:Key="LabelTitleStyle"
+               TargetType="Label"
+               BasedOn="{StaticResource BaseStyle}">
+            <Setter Property="Margin"
+                    Value="0,0,0,0" />
+
+            <Setter Property="TextColor"
+                    Value="Blue" />
+
+        </Style>
+
+        <Style x:Key="LabelValueStyle"
+               TargetType="Label"
+               BasedOn="{StaticResource BaseStyle}">
+            <Setter Property="Margin"
+                    Value="0,-8" />
+        </Style>
+
+
+
+    </ContentPage.Resources>
+
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+
+        <Frame CornerRadius="10"  
+               OutlineColor="Red" 
+               Padding="0"
+               Grid.Row="0" Grid.Column="0">
+            <StackLayout >
+                <Label Text="Latitude" Style="{StaticResource LabelTitleStyle}" />
+                <Label x:Name="LatitudeLabel" Text="0.00000" Style="{StaticResource LabelValueStyle}" />
+            </StackLayout>
+        </Frame>
+
+        <Frame CornerRadius="10"  
+               OutlineColor="Red" 
+               Padding="0"
+               Grid.Row="0" Grid.Column="1">
+            <StackLayout >
+                <Label Text="Longitude" Style="{StaticResource LabelTitleStyle}" />
+                <Label x:Name="LongitudeLabel" Text="0.00000"  Style="{StaticResource LabelValueStyle}" />
+            </StackLayout>
+        </Frame>
+
+        <Frame CornerRadius="10"  
+               OutlineColor="Red" 
+               Padding="0"
+               Grid.Row="1" Grid.Column="0">
+            <StackLayout >
+                <Label Text="Altitude GPS" Style="{StaticResource LabelTitleStyle}"/>
+                <Label x:Name="AltitudeLabel" Text="0 m" Style="{StaticResource LabelValueStyle}" />
+            </StackLayout>
+        </Frame>
+
+        <Frame CornerRadius="10"  
+               OutlineColor="Red" 
+               Padding="0"
+               Grid.Row="1" Grid.Column="1">
+            <StackLayout >
+                <Label Text="Altitude Barômetro" Style="{StaticResource LabelTitleStyle}"  />
+                <Label x:Name="Altitude2Label" Text="0 m"  Style="{StaticResource LabelValueStyle}" />
+            </StackLayout>
+        </Frame>
+
+        <Frame CornerRadius="10"  
+               OutlineColor="Red" 
+               Padding="0" 
+               Grid.Row="2" Grid.Column="0">
+            <StackLayout >
+                <Label Text="Pressão Barométrica" Style="{StaticResource LabelTitleStyle}" />
+                <Label x:Name="PressaoLabel" Text="0 mBar" Style="{StaticResource LabelValueStyle}" />
+            </StackLayout>
+        </Frame>
+
+        <Frame CornerRadius="10"  
+               OutlineColor="Red" 
+               Padding="0"
+               Grid.Row="2" Grid.Column="1">
+            <StackLayout >
+                <Label Text="Variômetro" Style="{StaticResource LabelTitleStyle}"/>
+                <Label x:Name="VarioLabel" Text="0 m/s" Style="{StaticResource LabelValueStyle}" />
+            </StackLayout>
+        </Frame>
+
+        <Button Text="Localização" 
+                Clicked="GetPosition" 
+                Grid.Row="4" 
+                Grid.ColumnSpan="2" 
+                BackgroundColor="Green"
+        />
+
+    </Grid>
+
 </ContentPage>

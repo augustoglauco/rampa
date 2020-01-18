@@ -15,7 +15,7 @@
         <Entry x:Name="TxtTemperatura" Text="23" Placeholder="Temperatura no ambiente" ClearButtonVisibility="WhileEditing"></Entry>
 
         <Label x:Name="LblPressaoNivelMar" Margin="0,0" Text="Pressão Nível do Mar" FontAttributes="Bold" FontSize="Subtitle" TextColor="Blue" HorizontalTextAlignment="Center" ></Label>
-        <Entry x:Name="TxtPressaoNivelMar" Text="1013.25" Placeholder="Pressão Nível do Mar (Obrigatório)" ClearButtonVisibility="WhileEditing"></Entry>
+        <Entry x:Name="TxtPressaoNivelMar" Text="1013,25" Placeholder="Pressão Nível do Mar (Obrigatório)" ClearButtonVisibility="WhileEditing"></Entry>
 
 
         <Button Text="Atualizar" Clicked="CadNome" BackgroundColor="#EEE"  />
